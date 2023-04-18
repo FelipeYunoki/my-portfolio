@@ -60,9 +60,10 @@ p{
     height: 150px;
     margin-bottom: 10px;
 }
-.fa-brands, .fa-solid {
-    font-size: 25px;
-}
 #icons a{
-    margin: 0 20px;
+    margin: 0 10px;
+}
+#icons a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
 }
