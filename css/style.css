@@ -2,47 +2,50 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 a{
     text-decoration: none;
 }
-ul{
-    list-style: none;
+#logo, #perfil{
+    border-radius: 50%;
 }
-/* ============================================ */
+header a, #container a, #container h1, #container p{
+    color: white;
+}
+/* ====================================== */
 body{
     background: #332F2E;
 }
 header{
-    min-width: 800px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
     box-shadow: -1px 1px 3px gray,
                 1px -1px 3px white;
 }
-header a{
-    font-size: 24px;
-}
-#logo, #perfil{
-    border-radius: 50%;
+header ul{
+    list-style: none;
 }
 #logo{
     width: 50px;
     height: 50px;
     vertical-align: middle;
 }
-li{
-    float: left;
+header a{
+    font-size: 24px;
 }
-li a{
-    padding: 10px 20px;
-    font-size: 18px;
+nav li{
+    display: inline-block;
 }
-li a:hover{
-    background: white;
+nav a{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+nav a:hover {
+    background-color: white;
     color: #332F2E;
     border-radius: 8px;
 }
@@ -54,16 +57,16 @@ li a:hover{
     justify-content: center;
     text-align: center;
 }
-h1{
-    margin-bottom: 5px;
-}
-p{
-    margin-bottom: 15px;
-}
 #perfil{
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+}
+#container h1{
+    margin-bottom: 5px;
+}
+#container p{
+    margin-bottom: 15px;
 }
 #icons a{
     margin: 0 10px;
@@ -71,4 +74,35 @@ p{
 #icons a:hover{
     border-bottom: 1px solid white;
     padding-bottom: 5px;
+}
+/* ====================================== */
+main{
+    background: white;
+    width: 550px;
+    margin: 25px auto;
+    box-shadow: 5px 5px 5px black;
+}
+main p, main ul{
+    font-size: 12px;
+}
+#dados-pessoais{
+    text-align: center;
+    background: #22566B;
+    padding: 35px 0 10px 0;
+    color: white;
+}
+#dados-pessoais h1{
+    font-size: 36px;
+}
+#dados{
+    padding: 15px 45px 35px 45px;
+}
+#dados p{
+    padding: 10px 0 20px 0;
+}
+#dados h2{
+    font-size: 12px;
+    background: #A6A6A6;
+    padding: 5px 0;
+    text-align: center;
 }
