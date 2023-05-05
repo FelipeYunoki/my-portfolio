@@ -85,6 +85,9 @@ main{
 main p, main ul{
     font-size: 12px;
 }
+main a{
+    color: white;
+}
 #dados-pessoais{
     text-align: center;
     background: #22566B;
@@ -92,17 +95,28 @@ main p, main ul{
     color: white;
 }
 #dados-pessoais h1{
-    font-size: 36px;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+#dados-pessoais p{
+    padding-bottom: 3px;
 }
 #dados{
     padding: 15px 45px 35px 45px;
-}
-#dados p{
-    padding: 10px 0 20px 0;
 }
 #dados h2{
     font-size: 12px;
     background: #A6A6A6;
     padding: 5px 0;
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#dados ul{
+    padding-left: 15px;
+}
+footer{
+    border-top: 2px solid white;
+    text-align: center;
+    padding: 25px 0;
 }
