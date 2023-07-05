@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #texto{
+            display: none;
+        }
+        article{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .image-and-paragraph {
+            display: flex;
+            align-items: center;
+        }
+        .image-and-paragraph img {
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+    </style>
     <title>Home | Felipe Yunoki</title>
 </head>
 <body>
@@ -25,9 +43,33 @@
     </header>
     <section>
         <article>
-            <h1>TCC App Pointfair</h1>
-            <p></p>
+            <h1>TCC App Pointfair  <span id="seta" style="cursor: pointer;">&#x25BC;</span></h1>
+            <div id="texto">
+                <div class="content">
+                    <div class="image-and-paragraph">
+                        <img src="img/PointFair.png" alt="" width="100">
+                        <p>O objetivo do aplicativo é fornecer informações sobre as feiras em andamento e os vendedores que estão participando de cada uma delas. Através do aplicativo, apenas as feiras e os vendedores devidamente registrados e cadastrados serão divulgados. Nosso objetivo é incentivar as pessoas a buscar os vendedores e descobrir os produtos que eles oferecem, valorizando assim seus negócios.</p>
+                    </div>
+                    <h2>Tela Inicial</h2>
+                    <p>A tela contém dois botões, "entrar" e "cadastrar". O botão "entrar" irá levar para a tela de login de cliente, e o botão "cadastrar" irá levar para a tela de cadastro de cliente.</p>
+                    <img src="img/AppPointFair1.jpeg" alt="" height="400">
+                    <img src="img/AppPointFair2.jpeg" alt="" height="400">
+                    <img src="img/AppPointFair3.jpeg" alt="" height="400">
+                </div>
+            </div>
         </article>
     </section>
+    <script>
+        var seta = document.getElementById("seta");
+        var texto = document.getElementById("texto");
+    
+        seta.addEventListener("click", function() {
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>

@@ -116,7 +116,12 @@ main a{
     padding-left: 15px;
 }
 footer{
-    border-top: 2px solid white;
     text-align: center;
     padding: 25px 0;
+}
+footer a{
+    color: white;
+}
+article h1, article p{
+    color: white;
 }
