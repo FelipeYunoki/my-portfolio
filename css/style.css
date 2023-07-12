@@ -1,55 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-#logo, #perfil{
+
+#logo,
+#perfil {
     border-radius: 50%;
 }
-header a, #container a, #container h1, #container p{
+
+header a,
+#container a,
+#container h1,
+#container p {
     color: white;
 }
+
 /* ====================================== */
-body{
+body {
     background: #332F2E;
 }
-header{
+
+header {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
     box-shadow: -1px 1px 3px gray,
-                1px -1px 3px white;
+        1px -1px 3px white;
 }
-header ul{
+
+header ul {
     list-style: none;
 }
-#logo{
+
+#logo {
     width: 50px;
     height: 50px;
     vertical-align: middle;
 }
-header a{
+
+header a {
     font-size: 24px;
 }
-nav li{
+
+nav li {
     display: inline-block;
 }
-nav a{
+
+nav a {
     display: block;
     padding: 10px;
     font-size: 16px;
 }
+
 nav a:hover {
     background-color: white;
     color: #332F2E;
     border-radius: 8px;
 }
-#container{
+
+#container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,54 +73,68 @@ nav a:hover {
     justify-content: center;
     text-align: center;
 }
-#perfil{
+
+#perfil {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
 }
-#container h1{
+
+#container h1 {
     margin-bottom: 5px;
 }
-#container p{
+
+#container p {
     margin-bottom: 15px;
 }
-#icons a{
+
+#icons a {
     margin: 0 10px;
 }
-#icons a:hover{
+
+#icons a:hover {
     border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
+
 /* ====================================== */
-main{
+main {
     background: white;
     width: 550px;
     margin: 25px auto;
     box-shadow: 5px 5px 5px black;
 }
-main p, main ul{
+
+main p,
+main ul {
     font-size: 12px;
 }
-main a{
+
+main a {
     color: white;
 }
-#dados-pessoais{
+
+#dados-pessoais {
     text-align: center;
     background: #22566B;
     padding: 35px 0 10px 0;
     color: white;
 }
-#dados-pessoais h1{
+
+#dados-pessoais h1 {
     font-size: 32px;
     padding-bottom: 10px;
 }
-#dados-pessoais p{
+
+#dados-pessoais p {
     padding-bottom: 3px;
 }
-#dados{
+
+#dados {
     padding: 15px 45px 35px 45px;
 }
-#dados h2{
+
+#dados h2 {
     font-size: 12px;
     background: #A6A6A6;
     padding: 5px 0;
@@ -112,16 +142,83 @@ main a{
     margin-bottom: 10px;
     margin-top: 20px;
 }
-#dados ul{
+
+#dados ul {
     padding-left: 15px;
 }
-footer{
+
+footer {
     text-align: center;
     padding: 25px 0;
 }
-footer a{
+
+footer a {
     color: white;
 }
-article h1, article p{
+
+article h1,
+article p {
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+        /* Hide the navigation list */
+    }
+
+    /* Create the three dots menu */
+    #menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+
+    #menu-toggle .bar.middle {
+        margin: 5px 0;
+    }
+
+    /* Show the navigation list when the menu is clicked */
+    #menu-toggle:checked+nav {
+        display: block;
+        text-align: center;
+        background: #332F2E;
+        padding: 10px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    #menu-toggle:checked+nav ul {
+        list-style: none;
+    }
+
+    #menu-toggle:checked+nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #menu-toggle:checked+nav a {
+        font-size: 18px;
+        padding: 5px;
+        color: white;
+    }
+
+    #menu-toggle:checked+nav a:hover {
+        background-color: white;
+        color: #332F2E;
+        border-radius: 8px;
+    }
 }

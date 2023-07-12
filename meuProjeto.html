@@ -24,6 +24,14 @@
             border-radius: 50px;
             margin-right: 10px;
         }
+        #image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #image img{
+            margin: 10px;
+        }
     </style>
     <title>Home | Felipe Yunoki</title>
 </head>
@@ -52,13 +60,40 @@
                     </div>
                     <h2>Tela Inicial</h2>
                     <p>A tela contém dois botões, "entrar" e "cadastrar". O botão "entrar" irá levar para a tela de login de cliente, e o botão "cadastrar" irá levar para a tela de cadastro de cliente.</p>
-                    <img src="img/AppPointFair1.jpeg" alt="" height="400">
-                    <img src="img/AppPointFair2.jpeg" alt="" height="400">
-                    <img src="img/AppPointFair3.jpeg" alt="" height="400">
+                    <div id="image">
+                        <img src="img/AppPointFair1.jpeg" alt="" height="400">
+                        <img src="img/AppPointFair2.jpeg" alt="" height="400">
+                        <img src="img/AppPointFair3.jpeg" alt="" height="400">
+                    </div>
+
+                    <h2>Tela home</h2>
+                    <p>Após o cliente ou vendedor terem realizado o cadastro ou login, ele será direcionado para a página principal do aplicativo, onde as publicações de feiras e trabalhos dos vendedores serão mostradas e divulgadas.</p>
+                    <p>A tela terá o “ícone de perfil” que irá direcioná-lo à sua tela de perfil, o “ícone de localização” que levará para à tela de mapa, o “ícone home” que levará o usuário à tela inicial, “ícone de pesquisa” que irá levar para a função de busca e o “ícone configurações” que direcionará o usuário até a tela de configurações.</p>
+                    <p>Ao clicar no nome de usuário do vendedor, acontecerá um direcionamento à tela de perfil desse feirante, podendo ver outras de suas publicações, suas informações. O usuário também tera opcão de seguir e denuciar a publicação.</p>
+                    <div id="image">
+                        <img src="img/AppPointFair4.jpeg" alt="" height="400">
+                    </div>
+
+                    <h2>Tela perfil</h2>
+                    <p>Na tela perfil é possível ver suas informações como: nome de usuário, foto de perfil e suas publicações como vendedor.</p>
+                    <p>Um ícone de uma caixa, que mostra à tela dos produtos;<br>
+                    Um ícone de uma banca, que leva as informações da localização das feiras que o vendedor participa;<br>
+                    E um ícone de calendário, que mostra as cargas-horárias da semana desse vendedor.</p>
+                    <div id="image">
+                        <img src="img/AppPointFair5.jpeg" alt="" height="400">
+                    </div>
                 </div>
             </div>
         </article>
     </section>
+    <footer>
+        <div id="icons">
+            <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+        </div>
+    </footer>
+
     <script>
         var seta = document.getElementById("seta");
         var texto = document.getElementById("texto");
